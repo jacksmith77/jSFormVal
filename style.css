@@ -34,6 +34,7 @@ h2 {
     text-align: center;
     margin: .2rem auto 0;
     font-size: 2rem;
+    text-shadow: 0 2px 3px rgb(176, 75, 235);
 }
 
 #form {
@@ -53,6 +54,7 @@ h2 {
 }
 
 .form-control input {
+    cursor: pointer;
     border: 2px solid #f0f0f0;
     border-radius: 4px;
     display: block;
@@ -123,5 +125,5 @@ button {
 
 button:hover {
     transform: translateY(-3px);
-    background-color: rgb(36, 202, 125);
+    background-color: rgb(200, 137, 236);
 }
