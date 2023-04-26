@@ -1,0 +1,127 @@
+:root {
+    --success-color: green;
+    --error-color: firebrick;
+}
+
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(223, 223, 223);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: rgb(211, 166, 236);
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,.8);
+    width: 25rem;
+    height: 36rem;
+}
+
+h2 {
+    color: ghostwhite;
+    text-align: center;
+    margin: .2rem auto 0;
+    font-size: 2rem;
+}
+
+#form {
+    padding: 1rem;
+}
+
+.form-control {
+    margin-bottom: .8rem;
+    padding-bottom: .8rem;
+    position: relative;
+}
+
+.form-control label {
+    color: #494949;
+    display: block;
+    margin-bottom: .3rem;
+}
+
+.form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: .8rem;
+    font-size: 1rem;
+    box-shadow: 0 1px px rgba(0,0,0,.8);
+}
+
+.form-control input:focus {
+    outline: none;
+    border-color: #acabab;
+}
+
+.form-control input:hover {
+    border-color: none;
+    box-shadow: 0 3px 8px rgba(84, 28, 114, 0.8);
+}
+
+.form-control.success input {
+    border-color: var(--success-color);
+}
+
+.form-control.error input {
+    border-color: var(--error-color);
+}
+
+.form-control img {
+    width: 1rem;
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 45px;
+    visibility: hidden;
+}
+
+.form-control.error img {
+    visibility: visible;
+}
+
+.form-control small {
+    float: right;
+    margin-right: 10px;
+    font-size: .7rem;
+    color: var(--error-color);
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+button {
+    display: block;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 2rem auto 0;
+    height: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,.8);
+    background-color: rgb(176, 75, 235);
+    width: 100%;
+    transition: all .3s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    background-color: rgb(36, 202, 125);
+}
